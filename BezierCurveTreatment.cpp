@@ -94,12 +94,12 @@ int main()
                     NumberOfPoints = Bez1->NumberOfPointsFromDescription(input_descr);
                     for (int i = 0; i < NumberOfPoints; i++)
                     {
-                        cout << "Enter " << i << " point in format (x,y,z)" << endl;
+                        cout << "Enter " << i << " point in format (x;y;z)" << endl;
                         cin >> point_line;
                         checking = Bez1->CheckPointString(point_line);
                         while (checking == false)
                         {
-                            cout << "Wrong point string format. Please, enter point in format (x,y,z) again or enter \"exit\"" << endl;
+                            cout << "Wrong point string format. Please, enter point in format (x;y;z) again or enter \"exit\"" << endl;
                             cin >> point_line;
                             if (point_line == "exit")
                                 break;
